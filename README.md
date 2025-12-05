@@ -24,20 +24,19 @@ Projet étudiant individuel - #EFREIDataStories2025
 
 ## Table des Matières
 
-- Aperçu du Projet  
-- Récit Data Story  
-- Informations sur les Données  
-- Fonctionnalités & Visualisations  
-- Installation & Configuration  
-- Structure du Projet  
-- Documentation Technique  
-- Alignement avec les Critères d'Évaluation  
-- Vidéo de Démonstration  
-- Informations sur l'Étudiant
+1. [Aperçu du Projet](#aperçu-du-projet)
+2. [Récit Data Story](#récit-data-story)
+3. [Informations sur les Données](#informations-sur-les-données)
+4. [Fonctionnalités & Visualisations](#fonctionnalités--visualisations)
+5. [Installation & Configuration](#installation--configuration)
+6. [Structure du Projet](#structure-du-projet)
+7. [Documentation Technique](#documentation-technique)
+8. [Vidéo de Démonstration](#vidéo-de-démonstration)
+9. [Informations sur l'Étudiant](#informations-sur-létudiant)
 
 ---
 
-## Aperçu du Projet
+## Aperçu du Projet <a name="aperçu-du-projet"></a>
 
 **Nom du Tableau de Bord :** Production Mondiale d'Énergie Renouvelable - Analytics Avancés  
 **Source des Données :** ourworldindata.org  
@@ -66,7 +65,7 @@ Projet étudiant individuel - #EFREIDataStories2025
 
 ---
 
-## Récit Data Story
+## Récit Data Story <a name="récit-data-story"></a>
 
 **Modèle Narratif :** Évolution Temporelle + Comparaison entre Pays
 
@@ -125,7 +124,7 @@ La géographie mondiale crée des avantages naturels : régions montagneuses pou
 
 ---
 
-## Informations sur les Données
+## Informations sur les Données <a name="informations-sur-les-données"></a>
 
 ### Source
 
@@ -181,7 +180,7 @@ La géographie mondiale crée des avantages naturels : régions montagneuses pou
 
 ---
 
-## Fonctionnalités & Visualisations
+## Fonctionnalités & Visualisations <a name="fonctionnalités--visualisations"></a>
 
 ### Onglet 1 : Vue Globale
 
@@ -257,7 +256,7 @@ La géographie mondiale crée des avantages naturels : régions montagneuses pou
 
 ---
 
-## Installation & Configuration
+## Installation & Configuration <a name="installation--configuration"></a>
 
 ### Prérequis
 
