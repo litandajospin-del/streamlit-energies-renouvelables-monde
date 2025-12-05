@@ -1,1 +1,275 @@
 # streamlit-energies-renouvelables-monde
+
+# Tableau de Bord de la Production Mondiale d'Énergie Renouvelable
+
+## Données
+- Code
+- Issues
+- Pull requests
+- Actions
+- Projects
+- Security
+- Insights
+
+---
+
+**EFREI Paris - Data Visualization 2025**  
+Projet étudiant individuel - #EFREIDataStories2025
+
+**URL du Tableau de Bord :** http://localhost:8501  
+**Version Python :** 3.9+  
+**Technologies :** Streamlit, Plotly, Pandas
+
+---
+
+## Table des Matières
+
+- Aperçu du Projet  
+- Récit Data Story  
+- Informations sur les Données  
+- Fonctionnalités & Visualisations  
+- Installation & Configuration  
+- Structure du Projet  
+- Documentation Technique  
+- Alignement avec les Critères d'Évaluation  
+- Vidéo de Démonstration  
+- Informations sur l'Étudiant
+
+---
+
+## Aperçu du Projet
+
+**Nom du Tableau de Bord :** Production Mondiale d'Énergie Renouvelable - Analytics Avancés  
+**Source des Données :** ourworldindata.org  
+**URL du Tableau de Bord :** http://localhost:8501  
+**Technologies :** Python, Streamlit, Plotly, Pandas
+
+### Énoncé du Problème
+
+**Question Centrale :** Comment le paysage mondial des énergies renouvelables a-t-il évolué entre les pays et les types d'énergie, et qu'est-ce que cela révèle sur la voie vers la neutralité carbone ?
+
+**Public Cible :**
+
+- Décideurs politiques en matière d'énergie et responsables gouvernementaux  
+- Administrateurs régionaux prenant des décisions d'investissement en infrastructures  
+- Organisations environnementales suivant les engagements climatiques mondiaux  
+- Analystes et chercheurs du secteur énergétique  
+- Citoyens intéressés par la transition énergétique mondiale
+
+**Points Clés à Retenir :**
+
+- Disparités de production révélant où les investissements en infrastructure sont nécessaires  
+- Composition du mix énergétique montrant la domination persistante de l'hydroélectricité  
+- Tendances temporelles démontrant l'expansion rapide de l'éolien et la croissance modérée du solaire  
+- Avantages géographiques (montagnes, côtes, ensoleillement) influençant les spécialisations  
+- Recommandations stratégiques pour accélérer le déploiement des énergies renouvelables
+
+---
+
+## Récit Data Story
+
+**Modèle Narratif :** Évolution Temporelle + Comparaison entre Pays
+
+Ce tableau de bord suit un arc narratif structuré qui va de l'identification du problème à travers l'analyse jusqu'aux insights actionnables.
+
+### 1. Accroche - Le Défi de la Neutralité Carbone
+
+Le monde s'est engagé à atteindre la neutralité carbone d'ici 2050. Les énergies renouvelables doivent remplacer les combustibles fossiles dans la production d'électricité, les transports et le chauffage. Comprendre où la production renouvelable se produit, quelles technologies réussissent et où existent les lacunes détermine si cet objectif est réalisable.
+
+Les enjeux sont élevés : l'échec signifie des émissions continues de carbone, des pénalités climatiques et une dépendance aux importations d'énergie. Le succès nécessite de comprendre des années de données de production à travers de nombreux pays pour identifier les modèles, prédire les goulets d'étranglement et allouer les ressources efficacement.
+
+### 2. Contexte - Le Paysage Mondial
+
+- Couverture Géographique : Plus de 100 pays suivis
+- Période Temporelle : Données annuelles
+- Sources d'Énergie Suivies :
+  - Hydroélectricité (barrages, rivières)
+  - Énergie éolienne (turbines terrestres)
+  - Énergie solaire photovoltaïque (panneaux, fermes)
+  - Total des énergies renouvelables
+
+La géographie mondiale crée des avantages naturels : régions montagneuses pour l'hydroélectricité, plaines côtières pour l'éolien, territoires ensoleillés pour le solaire.
+
+### 3. Insights Clés
+
+**Disparités Géographiques :**
+- Certains pays dominent la production grâce à des avantages géographiques spécifiques
+- Les pays développés montrent des mix énergétiques plus diversifiés
+- Les pays en développement dépendent souvent d'une seule source principale
+
+**Évolution Temporelle :**
+- L'énergie éolienne connaît la croissance la plus rapide ces dernières années
+- Le solaire photovoltaïque se développe progressivement avec la baisse des coûts
+- L'hydroélectricité montre une stabilité relative mais une vulnérabilité climatique
+- L'inégalité entre pays persiste dans l'adoption des technologies
+
+**Modèles de Mix Énergétique :**
+- L'hydroélectricité domine à l'échelle mondiale
+- La plupart des pays se spécialisent dans un ou deux types d'énergie
+- Les coûts technologiques baissent pour l'éolien et le solaire
+- L'infrastructure de réseau limite l'intégration dans certaines régions
+
+### 4. Implications et Recommandations
+
+**Pour les Décideurs Politiques :**
+- Développer des lignes de transmission connectant les régions à fort potentiel
+- Établir des incitations financières pour les régions en retard
+- Diversifier le mix énergétique pour réduire la dépendance climatique
+- Accélérer le développement des énergies complémentaires
+
+**Pour les Investisseurs :**
+- Opportunités de croissance dans les régions sous-utilisées
+- Potentiel d'expansion solaire dans les régions ensoleillées
+- Projets éoliens offshore offrant des avantages d'échelle
+- Solutions de stockage d'énergie critiques pour les sources intermittentes
+
+---
+
+## Informations sur les Données
+
+### Source
+
+**Jeu de Données :** Production Annuelle d'Électricité Renouvelable  
+**Éditeur :** Our World in Data  
+**Licence :** Données ouvertes  
+**Fréquence de Mise à Jour :** Annuelle
+
+### Caractéristiques du Jeu de Données
+
+- Format : Excel (.xlsx)
+- Taille : Données de plus de 100 pays sur plusieurs années
+- Encodage : UTF-8
+- Valeurs Manquantes : Gérées avec des stratégies de remplissage
+- Couverture Géographique : Mondiale avec codes ISO des pays
+
+### Colonnes de Données
+
+| Nom de Colonne | Description | Type | Unités |
+|---|---|---|---|
+| Country | Nom du pays | String | - |
+| Code | Code ISO du pays | String | - |
+| Year | Année de mesure | Integer | Année |
+| Hydro generation - TWh | Production hydroélectrique | Float | TWh |
+| Solar generation - TWh | Production solaire | Float | TWh |
+| Wind generation - TWh | Production éolienne | Float | TWh |
+
+### Nettoyage & Validation des Données
+
+**Étapes Réalisées :**
+
+1. **Chargement :** Fichier Excel avec encodage UTF-8
+2. **Valeurs Manquantes :**
+   - Colonnes numériques : remplies avec 0 (indiquant aucune production)
+   - Colonnes de texte : conservées telles quelles
+3. **Transformation des Données :**
+   - Renommage des colonnes pour la cohérence
+   - Conversion des types de données
+   - Calcul du total mondial par agrégation des pays
+4. **Validation :**
+   - Vérification des valeurs négatives
+   - Confirmation de la cohérence des noms de pays
+   - Vérification de la complétude de la plage d'années
+5. **Ingénierie des Caractéristiques :**
+   - Création de la variable production_totale_twh
+   - Calcul des totaux par pays et par année
+   - Préparation des données pour la visualisation
+
+**Hypothèses & Mises en Garde :**
+- Données manquantes interprétées comme production nulle
+- Focus sur les trois principales sources renouvelables
+- Données annuelles ne capturant pas la variabilité saisonnière
+
+---
+
+## Fonctionnalités & Visualisations
+
+### Onglet 1 : Vue Globale
+
+**Visualisations Géographiques Interactives**
+
+- **Carte Choroplèthe Mondiale**
+  - Intensité de production par pays avec codes ISO
+  - Infobulles avec valeurs de production
+  - Échelle de couleurs : Viridis (contraste élevé)
+  - Curseur d'année pour l'exploration temporelle
+
+**Tableaux de Bord Métriques**
+- 5 KPIs principaux mis à jour en temps réel
+- Croissance mondiale calculée automatiquement
+- Statistiques synthétiques sur la période analysée
+
+### Onglet 2 : Analyse par Pays
+
+**Analyse Détailée par Nation**
+
+- **Sélection Interactive du Pays :** Choix parmi tous les pays disponibles
+- **Statistiques Complètes :** Totaux, moyennes, maximums, minimums
+- **Graphiques de Tendance :** Évolution temporelle de chaque source
+- **Mix Énergétique :** Répartition des sources pour l'année la plus récente
+- **Détails par Source :** Analyse spécifique hydro/éolien/solaire
+
+### Onglet 3 : Comparaison entre Pays
+
+**Analyse Comparative Avancée**
+
+- **Comparaison Multi-Pays :** Jusqu'à 10 pays simultanément
+- **Types de Graphiques :** Barres groupées ou empilées
+- **Sélection d'Énergies :** Filtrage par type de source
+- **Tableaux de Données :** Valeurs absolues et pourcentages
+- **Analyse des Pourcentages :** Détection des énergies dominantes
+
+### Fonctionnalités Avancées
+
+**Treemap de Distribution Mondiale**
+- Vue hiérarchique Monde → Pays → Types d'Énergie
+- Zoom interactif par clic
+- Encodage couleur par intensité de production
+
+**Analyse Filtrée**
+- Filtres multi-critères : années, pays, types d'énergie
+- Visualisations dynamiques s'adaptant aux filtres
+- Export des données filtrées
+
+**Insights Automatisés**
+- Détection des leaders de production
+- Analyse de la dominance énergétique
+- Recommandations stratégiques basées sur les données
+
+### Filtres de la Barre Latérale
+
+**Exploration Dynamique des Données**
+
+- Curseur de Plage d'Années : Sélection de période temporelle
+- Sélection Multi-Pays : Focus sur zones géographiques
+- Sélection Multi-Énergies : Filtrage par sources spécifiques
+- Mises à Jour en Temps Réel : Tous les graphiques répondent instantanément
+
+### Métriques du Tableau de Bord
+
+**Indicateurs Clés de Performance**
+
+- Production Totale (TWh)
+- Nombre de Pays Analysés
+- Types d'Énergie Suivis
+- Production Annuelle Moyenne
+- Années Couvertes
+- Taux de Croissance (%)
+
+---
+
+## Installation & Configuration
+
+### Prérequis
+
+- Python : 3.9 ou supérieur
+- Système d'Exploitation : Windows, macOS, ou Linux
+- Connexion Internet : Pour le chargement initial des données
+
+### Étape 1 : Cloner ou Télécharger
+
+```bash
+# Cloner le dépôt (si utilisation de Git)
+git clone <url-du-dépôt>
+cd "nom-du-projet"
+
+# Ou télécharger ZIP et extraire
