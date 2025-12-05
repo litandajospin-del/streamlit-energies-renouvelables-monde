@@ -2,22 +2,11 @@
 
 # Tableau de Bord de la Production Mondiale d'Énergie Renouvelable
 
-## Données
-- Code
-- Issues
-- Pull requests
-- Actions
-- Projects
-- Security
-- Insights
+**Projet Data Visualisation**  
+Université de Montpellier
+Master 2 MBFA parcours SIEF
 
----
-
-**EFREI Paris - Data Visualization 2025**  
-Projet étudiant individuel - #EFREIDataStories2025
-
-**URL du Tableau de Bord :** http://localhost:8501  
-**Version Python :** 3.9+  
+**URL du Tableau de Bord :** http://localhost:8515/
 **Technologies :** Streamlit, Plotly, Pandas
 
 ---
@@ -28,11 +17,6 @@ Projet étudiant individuel - #EFREIDataStories2025
 2. [Récit Data Story](#récit-data-story)
 3. [Informations sur les Données](#informations-sur-les-données)
 4. [Fonctionnalités & Visualisations](#fonctionnalités--visualisations)
-5. [Installation & Configuration](#installation--configuration)
-6. [Structure du Projet](#structure-du-projet)
-7. [Documentation Technique](#documentation-technique)
-8. [Vidéo de Démonstration](#vidéo-de-démonstration)
-9. [Informations sur l'Étudiant](#informations-sur-létudiant)
 
 ---
 
@@ -40,7 +24,7 @@ Projet étudiant individuel - #EFREIDataStories2025
 
 **Nom du Tableau de Bord :** Production Mondiale d'Énergie Renouvelable - Analytics Avancés  
 **Source des Données :** ourworldindata.org  
-**URL du Tableau de Bord :** http://localhost:8501  
+**URL du Tableau de Bord :** http://localhost:8515/ 
 **Technologies :** Python, Streamlit, Plotly, Pandas
 
 ### Énoncé du Problème
@@ -253,22 +237,3 @@ La géographie mondiale crée des avantages naturels : régions montagneuses pou
 - Production Annuelle Moyenne
 - Années Couvertes
 - Taux de Croissance (%)
-
----
-
-## Installation & Configuration <a name="installation--configuration"></a>
-
-### Prérequis
-
-- Python : 3.9 ou supérieur
-- Système d'Exploitation : Windows, macOS, ou Linux
-- Connexion Internet : Pour le chargement initial des données
-
-### Étape 1 : Cloner ou Télécharger
-
-```bash
-# Cloner le dépôt (si utilisation de Git)
-git clone <url-du-dépôt>
-cd "nom-du-projet"
-
-# Ou télécharger ZIP et extraire
