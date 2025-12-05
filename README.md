@@ -3,10 +3,10 @@
 # Tableau de Bord de la Production Mondiale d'Énergie Renouvelable
 
 **Projet Data Visualisation**  
-Université de Montpellier
+Université de Montpellier  
 Master 2 MBFA parcours SIEF
 
-**URL du Tableau de Bord :** http://localhost:8515/
+**URL du Tableau de Bord :** http://localhost:8515/  
 **Technologies :** Streamlit, Plotly, Pandas
 
 ---
@@ -24,7 +24,7 @@ Master 2 MBFA parcours SIEF
 
 **Nom du Tableau de Bord :** Production Mondiale d'Énergie Renouvelable - Analytics Avancés  
 **Source des Données :** ourworldindata.org  
-**URL du Tableau de Bord :** http://localhost:8515/ 
+**URL du Tableau de Bord :** http://localhost:8515/  
 **Technologies :** Python, Streamlit, Plotly, Pandas
 
 ### Énoncé du Problème
