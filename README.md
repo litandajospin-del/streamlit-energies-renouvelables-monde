@@ -237,3 +237,32 @@ La géographie mondiale crée des avantages naturels : régions montagneuses pou
 - Production Annuelle Moyenne
 - Années Couvertes
 - Taux de Croissance (%)
+
+---
+
+## Carnet de Bord du Projet
+
+Ce journal retrace l'avancement du projet "Production d'Énergies Renouvelables dans le Monde", de la phase de conception à l'implémentation finale du tableau de bord Streamlit.
+
+### Phase Initiale : Définition et Préparation (Semaine 1)
+| Date | Tâche Principale | Problèmes Rencontrés / Défis | Solutions Apportées |
+|---|---|---|---|
+| Jour 1-2 | Cadrage du Projet & Choix des Indicateurs | Déficit d'expertise (Auto-Critique) : Difficulté à identifier immédiatement les indicateurs clés de performance (KPIs) pertinents pour une analyse de la transition énergétique mondiale. | Recherche Analytique : Lecture d'articles spécialisés (IRENA, AIE, Our World in Data) pour établir les indicateurs fondamentaux (Croissance annuelle, Mix énergétique, Production cumulée). |
+| Jour 3 | Acquisition et Nettoyage du Dataset | Problème de cohérence (Étape critique) : Détection d'erreurs dans le fichier Excel (modern-renewable-energy-consumption.xlsx), notamment des valeurs 0.00 ou NaN dans la ligne 'World', ce qui rendait les KPIs mondiaux inutilisables. | Ingénierie des données : Implémentation d'une logique de recalcul systématique dans la fonction nettoyer_et_preparer_donnees. La ligne 'World' est désormais agrégée par sommation de tous les pays, garantissant l'intégrité des métriques mondiales. |
+| Jour 4 | Structure du Code et Modélisation | Surcharge de l'exemple : L'exemple initial (France) contenait des éléments trop complexes ou non applicables (coordonnées régionales, fonctions 3D spécifiques). | Simplification Modulaire : Abandon des fonctions non pertinentes et adoption d'une structure modulaire simple (Chargement → Préparation → Visualisation), rendant le code plus lisible et adapté aux objectifs |
+
+### Phase de Développement : Visualisation et Problèmes Techniques (Semaine 2)
+| Date | Tâche Principale | Problèmes Rencontrés / Défis | Solutions Apportées |
+|---|---|---|---|
+| Jour 5 | Implémentation de la Carte Choroplèthe | Problème de géolocalisation : Manque des coordonnées géographiques pour chaque pays pour la cartographie | Solution Plotly : Utilisation de la librairie Plotly Express avec la colonne code_iso (ISO-3). Plotly gère les polygones frontaliers en interne, contournant la nécessité de fournir des fichiers GeoJSON manuellement. |
+| Jour 6 | Développement de l'Analyse Détaillée (Onglet 2) | Répétition du code : Nécessité d'afficher les tendances (Hydro, Solaire, Éolien) individuellement et de calculer les stats (Moyenne, Max) pour chacun. | Factorisation : Création de la fonction générique creer_graphe_tendance qui accepte le nom de la colonne comme argument, réduisant la taille du code et facilitant l'ajout de futures sources d'énergie. |
+| Jour 7 | Création du Mix et de la Comparaison | Incohérence des données : Erreur ValueError ou KeyError lors de l'utilisation de df.melt ou px.bar due à des problèmes de majuscules (pays vs Pays). | Normalisation : Correction du code pour uniformiser la casse des colonnes utilisées dans les graphiques Plotly (ex. : df_sources.rename(columns={'pays': 'Pays'})). |
+
+### Phase Finale : Valorisation des Résultats et Expérience Utilisateur
+| Date | Tâche Principale | Problèmes Rencontrés / Défis | Solutions Apportées |
+|---|---|---|---|
+| Jour 8-9 | Finalisation de l'Ergonomie et de la Navigation Applicative | Dépendance des widgets : Le calcul des KPIs dépendait de variables non encore définies (annee_carte), causant un NameError au lancement du script. | Réorganisation du flux : Déplacement des calculs de KPIs dépendant des sliders après la définition des sliders Streamlit, assurant une exécution séquentielle correcte du script. |
+| Jour 10 | Amélioration de l'Analyse Périodique | Amélioration de l'interprétation : Nécessité de montrer la robustesse des données au-delà de la simple tendance. | Ajout de Métriques Avancées : Intégration du calcul des statistiques pour la période sélectionnée (Total cumulé, Maximum/Minimum avec l'année du record), enrichissant la partie interprétative du rapport. |
+| Jour 11 | Documentation du Rapport | Objectif : Rédiger un README.md et un carnet de bord | Synthèse : Traduction et adaptation du modèle académique de README.md pour refléter les défis et succès spécifiques au projet mondial. |
+
+
